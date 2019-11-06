@@ -1,9 +1,9 @@
-import { Page } from '../components'
+import { Container } from '../components'
 
 const About = () => (
-  <Page>
+  <Container>
     <h1>About</h1>
-  </Page>
+  </Container>
 )
 
 export default About

@@ -1,9 +1,9 @@
-import { Page } from '../components'
+import { Container } from '../components'
 
 const Works = () => (
-  <Page>
+  <Container>
     <h1>Works</h1>
-  </Page>
+  </Container>
 )
 
 export default Works

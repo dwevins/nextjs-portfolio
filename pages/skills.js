@@ -1,9 +1,9 @@
-import { Page } from '../components'
+import { Container } from '../components'
 
 const Skills = () => (
-  <Page>
+  <Container>
     <h1>Skills</h1>
-  </Page>
+  </Container>
 )
 
 export default Skills

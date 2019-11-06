@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import styled from 'styled-components'
 
 const links = [
   { href: '/', label: 'Home' },
@@ -11,18 +12,27 @@ const links = [
   return link
 })
 
-const Nav = () => (
-  <nav>
+const StyledNav = styled.nav`
+  height: 100vh;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: ${p => p.theme.sizing.navWidth};
+`
+
+const Nav = ({ className }) => (
+  <StyledNav className={className}>
     <ul>
       {links.map(({ key, href, label }) => (
         <li key={key}>
-          <Link href={href} prefetch>
-            {label}
+          <Link href={href}>
+            <a>{label}</a>
           </Link>
         </li>
       ))}
     </ul>
-  </nav>
+  </StyledNav>
 )
 
 export default Nav
