@@ -26,6 +26,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
