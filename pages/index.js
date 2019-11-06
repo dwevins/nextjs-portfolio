@@ -1,8 +1,8 @@
 import React from 'react'
-import { Page } from '../components'
+import { Container } from '../components'
 
 const Home = () => (
-  <Page>
+  <Container>
     <div className="hero">
       <h1 className="title">Welcome to Next.js!</h1>
       <p className="description">
@@ -27,7 +27,7 @@ const Home = () => (
         </a>
       </div>
     </div>
-  </Page>
+  </Container>
 )
 
 export default Home
